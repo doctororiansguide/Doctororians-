@@ -97,3 +97,34 @@
     <script src="script.js"></script>
 </body>
 </html>
+<script>
+    // Make all dashboard cards clickable
+    document.addEventListener('DOMContentLoaded', function() {
+        const cards = document.querySelectorAll('.dashboard-card');
+        
+        cards.forEach(card => {
+            // Skip the featured card (Start Quiz) as it already has link
+            if(!card.classList.contains('featured')) {
+                card.style.cursor = 'pointer';
+                card.addEventListener('click', function(e) {
+                    // Don't trigger if clicking on a link inside
+                    if(e.target.tagName !== 'A') {
+                        const cardTitle = this.querySelector('h3').textContent;
+                        
+                        if(cardTitle.includes('PDF')) {
+                            alert('PDF Resources page would open here. For now, showing sample PDFs: Biology, Chemistry, Physics, English');
+                        } else if(cardTitle.includes('Tips')) {
+                            alert('Tips page would open here with time management strategies and score improvement tips');
+                        } else if(cardTitle.includes('Test Attempt')) {
+                            alert('Test Attempt Guide would open here with section-wise strategies');
+                        } else if(cardTitle.includes('About')) {
+                            window.location.href = 'about.html';
+                        } else if(cardTitle.includes('Privacy')) {
+                            window.location.href = 'privacy.html';
+                        }
+                    }
+                });
+            }
+        });
+    });
+</script>
