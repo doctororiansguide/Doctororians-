@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Doctororians Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-stethoscope"></i>
+                <h1>Doctororians Guide</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                <li><a href="login.html" class="btn-login">My Account</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="container">
+            <h2>Welcome to Your MDCAT Dashboard</h2>
+            
+            <div class="dashboard-grid">
+                <a href="quiz.html" class="dashboard-card featured">
+                    <i class="fas fa-play-circle"></i>
+                    <h3>Start Quiz</h3>
+                    <p>Begin your practice session</p>
+                </a>
+                
+                <div class="dashboard-card">
+                    <i class="fas fa-file-pdf"></i>
+                    <h3>PDF Resources</h3>
+                    <p>Study materials & notes</p>
+                    <ul>
+                        <li>Biology Notes</li>
+                        <li>Chemistry Guide</li>
+                        <li>Physics Formulas</li>
+                        <li>English Practice</li>
+                    </ul>
+                </div>
+                
+                <div class="dashboard-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Tips for Better Score</h3>
+                    <p>Strategies to maximize marks</p>
+                    <ul>
+                        <li>Time Management</li>
+                        <li>Question Selection</li>
+                        <li>Common Mistakes</li>
+                        <li>Last-minute Tips</li>
+                    </ul>
+                </div>
+                
+                <div class="dashboard-card">
+                    <i class="fas fa-clipboard-check"></i>
+                    <h3>Test Attempt Guide</h3>
+                    <p>How to attempt effectively</p>
+                    <ul>
+                        <li>Section-wise Strategy</li>
+                        <li>Marking Scheme</li>
+                        <li>Speed vs Accuracy</li>
+                        <li>Mock Test Pattern</li>
+                    </ul>
+                </div>
+                
+                <div class="dashboard-card">
+                    <i class="fas fa-info-circle"></i>
+                    <h3>About Us</h3>
+                    <p>Learn about our mission</p>
+                    <a href="about.html" class="btn-small">Read More</a>
+                </div>
+                
+                <div class="dashboard-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Privacy Policy</h3>
+                    <p>Your data is safe with us</p>
+                    <a href="privacy.html" class="btn-small">View Policy</a>
+                </div>
+            </div>
+            
+            <div class="progress-section">
+                <h3>Your Progress</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 65%;">65%</div>
+                </div>
+                <p>Quizzes Completed: 13/20</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
