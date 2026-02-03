@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Resources - Doctororians Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .pdfs-container {
+            max-width: 1000px;
+            margin: 2rem auto;
+        }
+        
+        .pdf-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .pdf-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .pdf-card i {
+            font-size: 3rem;
+            color: #e74c3c;
+            margin-bottom: 1rem;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-stethoscope"></i>
+                <h1>Doctororians Guide</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="pdfs.html" class="active">PDFs</a></li>
+                <li><a href="login.html" class="btn-login">My Account</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="pdfs-container">
+            <h2>PDF Study Resources</h2>
+            <p>Download comprehensive study materials for MDCAT preparation</p>
+            
+            <div class="pdf-grid">
+                <div class="pdf-card">
+                    <i class="fas fa-dna"></i>
+                    <h3>Biology Notes</h3>
+                    <p>Complete biology syllabus with diagrams</p>
+                    <a href="#" class="download-btn">Download PDF</a>
+                </div>
+                
+                <div class="pdf-card">
+                    <i class="fas fa-flask"></i>
+                    <h3>Chemistry Guide</h3>
+                    <p>Organic, Inorganic & Physical Chemistry</p>
+                    <a href="#" class="download-btn">Download PDF</a>
+                </div>
+                
+                <div class="pdf-card">
+                    <i class="fas fa-atom"></i>
+                    <h3>Physics Formulas</h3>
+                    <p>Important formulas and derivations</p>
+                    <a href="#" class="download-btn">Download PDF</a>
+                </div>
+                
+                <div class="pdf-card">
+                    <i class="fas fa-book"></i>
+                    <h3>English Practice</h3>
+                    <p>Grammar, comprehension & vocabulary</p>
+                    <a href="#" class="download-btn">Download PDF</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Doctororians Guide. All rights reserved.</p>
+            <p><a href="privacy.html">Privacy Policy</a> | <a href="about.html">About Us</a></p>
+        </div>
+    </footer>
+</body>
+</html>
